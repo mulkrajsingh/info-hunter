@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-block-start: 1em;
+    position: sticky;
+    top: 0px;
+    background-image: linear-gradient(to top,lightblue, black);
+}
+
+.navbar-logo {
+    font-size: 1em;
+    font-weight: bolder;
+    color: transparent;
+    background-image: linear-gradient(to right, purple, pink, pink, purple);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-inline-end: 0.5em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.navbar-name {
+    font-size: 0.6em;
+}
