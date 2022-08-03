@@ -1,12 +1,12 @@
 import { Fragment } from "react";
 import "./App.scss";
-import { Header, Navbar } from "./Scripts/Components";
+import { Container, Navbar } from "./Components";
 
 function App() {
   return (
     <Fragment>
       <Navbar />
-      {/* <Header /> */}
+      <Container />
     </Fragment>
   );
 }

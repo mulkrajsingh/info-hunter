@@ -1,0 +1,35 @@
+@import './variables';
+
+.search_field {
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    margin-block-start: 0.5em;
+
+    .hunt_field {
+        width: 70%;
+        max-width: 100%;
+        font-size: 0.6em;
+        padding: 0.2em 0.6em;
+        border: none;
+
+        &:hover {
+            background-color: $hover_black_light;
+        }
+    }
+
+    .hunt_btn {
+        max-width: 30%;
+        font-size: 1em;
+        text-transform: uppercase;
+        color: #fff;
+        background: transparent;
+        padding: 0.4em 0.6em;
+        border: 1px solid;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $hover_black_dark;
+        }
+    }
+}

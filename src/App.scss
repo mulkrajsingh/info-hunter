@@ -1,2 +1,11 @@
-@use './styles/header';
-@use  './styles/navbar';
+@import './styles/header';
+@import './styles/navbar';
+@import './styles/placeholder';
+@import './styles/variables';
+@import './styles/searchField';
+
+.container {
+    width: 1200px;
+    max-width: calc(100% - 20px);
+    margin-inline: auto;
+}
