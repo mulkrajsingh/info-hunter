@@ -1,0 +1,18 @@
+@import './variables';
+
+.navbar {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    background-image: linear-gradient(to top, $prussian_blue, $black);
+}
+
+.navbar-title {
+    font-size: 1em;
+    font-weight: bold;
+    user-select: none;
+    cursor: pointer;
+    margin-block: 0.5em;
+}

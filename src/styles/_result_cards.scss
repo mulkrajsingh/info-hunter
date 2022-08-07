@@ -1,0 +1,73 @@
+.result_cards_container {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.result_card {
+    width: 100%;
+    border: 1px solid $blue_sapphire;
+    padding: 0.5em;
+    background-color: $maastricht_blue;
+    border-radius: 6px;
+
+    &:hover {
+        background-color: $prussian_blue_light;
+    }
+
+    .cart_title {
+        font-size: $title_font_size;
+        text-transform: capitalize;
+        @extend %line_clamp;
+        -webkit-line-clamp: 2;
+    }
+
+    .author_names {
+        @extend %paper_detail;
+    }
+
+    .paper_details {
+        display: flex;
+        align-items: center;
+        @extend %paper_detail;
+
+        .date_of_publish {
+            display: flex;
+            align-items: center;
+
+            &::before {
+                content: "" + $unicode_circle;
+                margin-inline: $line_gap;
+                font-size: $title_font_size;
+            }
+        }
+    }
+
+    .sample_content {
+        @extend %line_clamp;
+        -webkit-line-clamp: 4;
+        @extend %paper_detail;
+        text-align: justify;
+
+        &-snippet {
+            max-width: 10px;
+            overflow: hidden;
+
+            &:not(:first-child) {
+                &::before {
+                    content: "" + $unicode_dash;
+                    margin-inline: $line_gap;
+                    font-size: $title_font_size;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sample_content {
+        -webkit-line-clamp: 8 !important;
+    }
+}

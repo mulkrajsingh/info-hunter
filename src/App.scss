@@ -1,0 +1,13 @@
+@import './styles/header';
+@import './styles/navbar';
+@import './styles/placeholder';
+@import './styles/variables';
+@import './styles/searchField';
+@import './styles/result_cards';
+
+.container {
+    width: 1200px;
+    max-width: calc(100% - 20px);
+    margin-inline: auto;
+    margin-block-end: 2rem;
+}
