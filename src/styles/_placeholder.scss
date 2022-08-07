@@ -1,0 +1,12 @@
+%line_clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+%paper_detail {
+    font-size: $sub_title_font_size;
+    text-transform: capitalize;
+    margin-top: $line_gap;
+}

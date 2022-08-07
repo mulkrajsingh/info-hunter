@@ -1,4 +1,5 @@
 import { Header } from "../Header";
+import { ResultCards } from "../Result_Info_Card";
 import { SearchField } from "../SearchField";
 
 const Container = () => {
@@ -6,6 +7,7 @@ const Container = () => {
     <section className="container">
       <Header />
       <SearchField />
+      <ResultCards />
     </section>
   );
 };

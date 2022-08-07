@@ -1,5 +1,5 @@
 const Header = () => {
-  return <section className="header">Search What You Like</section>;
+  return <section className="header">Hunt For Knowledge</section>;
 };
 
 export default Header;
